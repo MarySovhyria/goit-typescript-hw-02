@@ -1,7 +1,20 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type detail = {
+  createAt: Date;
+  updateAt: Date;
 
+}
+
+type pages = {
+  title: string;
+  likes: number;
+  accounts: string[];
+  status?: string;
+  details?: detail;
+
+}
 const page1 = {
   title: 'The awesome page',
   likes: 100,
